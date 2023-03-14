@@ -11,7 +11,9 @@
             <!--<li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{ url('/#experience') }}">Experience</a></li>-->
             <!--<li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{ url('/#education') }}">Education & Skills</a></li>-->
             <!--<li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{ route('blog') }}">Blog</a></li>-->
+
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{ route('funproj') }}">Fun Projects</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{ route('diaryprog') }}">Diary Programmer</a></li>
 
             @if( Auth::check() )
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{ route('adm_manage_data') }}">Manage Data</a></li>
