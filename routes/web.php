@@ -44,6 +44,14 @@ Route::get('/diaryprog_switch_to_aws', [App\Http\Controllers\DiaryProgSwitchAwsC
 Route::get('/cv', [App\Http\Controllers\CvController::class, 'index'])->name('cv');
 Route::get('/cv_eng', [App\Http\Controllers\CvController::class, 'cv_eng'])->name('cv_eng');
 
+//============ Data Sekolah ============================= (Begin)
+Route::get('/data_sekolah', [App\Http\Controllers\DataSekolahController::class, 'index'])->name('data_sekolah');
+Route::post('/data_sekolah_post', [App\Http\Controllers\DataSekolahController::class, 'index'])->name('data_sekolah_post');
+Route::get('/data_sekolah_change_prov', [App\Http\Controllers\DataSekolahController::class, 'change_prov'])->name('data_sekolah_change_prov');
+//============ Data Sekolah ============================= (End)
+
+/*=========================================================================================================================================================================*/
+
 Route::group(['middleware' => 'auth'], function () {
  
     Route::get('/logout', [App\Http\Controllers\AuthController::class, 'logout'])->name('logout');
