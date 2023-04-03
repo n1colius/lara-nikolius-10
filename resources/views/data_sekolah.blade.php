@@ -1060,7 +1060,7 @@ function toggleMarker(type) {
 /* GOGGLE MAPS ========================================================= (END) */
 
 </script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCba8N9LjVuA4bq4hsgh-DK_T8WGxh1bms&callback=initMap"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3bffGZP6dsTys-gI_Ii8U46YPRg5eBPo&callback=initMap"></script>
 @php
 //echo '<pre>'; print_r($data_koor_sd); exit;
 @endphp
