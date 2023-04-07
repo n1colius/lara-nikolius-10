@@ -40,6 +40,7 @@ Route::get('/pengenalan_uuid', [App\Http\Controllers\SsUuidController::class, 'i
 
 Route::get('/diaryprog', [App\Http\Controllers\DiaryProgController::class, 'index'])->name('diaryprog');
 Route::get('/diaryprog_switch_to_aws', [App\Http\Controllers\DiaryProgSwitchAwsController::class, 'index'])->name('diaryprog_switch_to_aws');
+Route::get('/diaryprog_data_vis', [App\Http\Controllers\DiaryProgDataVis::class, 'index'])->name('diaryprog_data_vis');
 
 Route::get('/cv', [App\Http\Controllers\CvController::class, 'index'])->name('cv');
 Route::get('/cv_eng', [App\Http\Controllers\CvController::class, 'cv_eng'])->name('cv_eng');
