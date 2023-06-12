@@ -11094,6 +11094,234 @@ section.resume-section .resume-section-content {
   border-left: .25rem solid #1cc88a !important
 }
 
+
+/*===================================================================================================================*/
+
+
+.shop-card{
+
+  background-color: #fff;
+  border:none;
+  border-radius: 10px;
+  width: 190px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.shop-image-container{
+
+  position: relative;
+}
+
+.shop-thumbnail-image{
+  border-radius: 10px !important;
+}
+
+
+.shop-discount{
+
+  background-color: red;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 4px;
+  padding-right: 4px;
+  font-size: 10px;
+  border-radius: 6px;
+  color: #fff;
+}
+
+.shop-wishlist{
+
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.shop-first{
+
+  position: absolute;
+  width: 100%;
+      padding: 9px;
+}
+
+
+.shop-dress-name{
+  font-size: 13px;
+  font-weight: bold;
+  width: 75%;
+}
+
+
+.shop-new-price{
+  font-size: 13px;
+  font-weight: bold;
+  color: red;
+  
+}
+.shop-old-price{
+  font-size: 8px;
+  font-weight: bold;
+  color: grey;
+}
+
+
+.shop-btn{
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.shop-creme{
+  background-color: #fff;
+  border: 2px solid grey;
+  
+
+}
+.shop-creme:hover {
+  border: 3px solid grey;
+}
+
+.shop-creme:focus {
+  background-color: grey;
+
+}
+
+
+.shop-red{
+  background-color: #fff;
+  border: 2px solid red;
+  
+}
+
+
+.shop-red:hover {
+  border: 3px solid red;
+}
+.shop-red:focus {
+  background-color: red;
+}
+
+
+
+.shop-blue{
+  background-color: #fff;
+  border: 2px solid #40C4FF;
+}
+
+.shop-blue:hover {
+  border: 3px solid #40C4FF;
+}
+.shop-blue:focus {
+  background-color: #40C4FF;
+}
+.shop-darkblue{
+  background-color: #fff;
+  border: 2px solid #01579B;
+}
+.shop-darkblue:hover {
+  border: 3px solid #01579B;
+}
+.shop-darkblue:focus {
+  background-color: #01579B;
+}
+.shop-yellow{
+  background-color: #fff;
+  border: 2px solid #FFCA28;
+}
+.shop-yellow:hover {
+  border-radius: 3px solid #FFCA28;
+}
+.shop-yellow:focus {
+  background-color: #FFCA28;
+}
+
+
+.shop-item-size{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid grey;
+  color: grey;
+  font-size: 10px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+
+.shop-rating-star{
+  font-size: 10px !important;
+}
+
+.shop-rating-number{
+  font-size: 10px;
+  color: grey;
+
+}
+
+.shop-buy{
+  font-size: 12px;
+  color: purple;
+  font-weight: 500;
+}
+
+.shop-voutchers{
+  background-color: #fff;
+  border:none;
+  border-radius: 10px;
+  width: 190px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  overflow: hidden;
+
+}
+.shop-voutcher-divider{
+
+  display: flex;
+
+}
+.shop-voutcher-left{
+  width: 60%
+}
+.shop-voutcher-name{
+  color: grey;
+  font-size: 9px;
+  font-weight: 500;
+}
+.shop-voutcher-code{
+  color: red;
+  font-size: 11px;
+  font-weight: bold;
+}
+.shop-voutcher-right{
+  width: 40%;  
+  background-color: purple;
+  color: #fff;
+}
+
+.shop-discount-percent{
+  font-size: 12px;
+  font-weight: bold;
+  position: relative;
+  top: 5px;
+}
+.shop-off{
+  font-size: 14px;
+  position: relative;
+  bottom: 5px;
+}
+
+
+/*===================================================================================================================*/
+
+
 @media (min-width: 768px) {
   section.resume-section {
     min-height: 100vh;

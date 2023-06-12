@@ -41,9 +41,12 @@ Route::get('/pengenalan_uuid', [App\Http\Controllers\SsUuidController::class, 'i
 Route::get('/diaryprog', [App\Http\Controllers\DiaryProgController::class, 'index'])->name('diaryprog');
 Route::get('/diaryprog_switch_to_aws', [App\Http\Controllers\DiaryProgSwitchAwsController::class, 'index'])->name('diaryprog_switch_to_aws');
 Route::get('/diaryprog_data_vis', [App\Http\Controllers\DiaryProgDataVis::class, 'index'])->name('diaryprog_data_vis');
+Route::get('/diaryprog_aws_serverless', [App\Http\Controllers\DiaryProgAwsServerless::class, 'index'])->name('diaryprog_aws_serverless');
 
 Route::get('/cv', [App\Http\Controllers\CvController::class, 'index'])->name('cv');
 Route::get('/cv_eng', [App\Http\Controllers\CvController::class, 'cv_eng'])->name('cv_eng');
+
+Route::get('/jual', [App\Http\Controllers\JualanController::class, 'index'])->name('jual');
 
 //============ Data Sekolah ============================= (Begin)
 Route::get('/data_sekolah', [App\Http\Controllers\DataSekolahController::class, 'index'])->name('data_sekolah');

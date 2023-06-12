@@ -15,6 +15,9 @@
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{ route('funproj') }}">Fun Projects</a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{ route('diaryprog') }}">Diary Programmer</a></li>
 
+            <!-- hide dulu sementara -->
+            <li style="display:none;" class="nav-item"><a class="nav-link js-scroll-trigger" href="{{ route('jual') }}">Lapak Jualan</a></li>
+
             @if( Auth::check() )
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{ route('adm_manage_data') }}">Manage Data</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{ route('logout') }}">Logout</a></li>

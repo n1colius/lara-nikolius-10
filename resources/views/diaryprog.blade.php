@@ -29,6 +29,15 @@
                         </div>
                     </div>
 
+                    <div class="col">
+                        <div class="card" style="border:none;">
+                            <img src="{{url('/')}}/assets/img/serverless.png" class="card-img-top" style="width:150px;height: 125px;">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="{{ route('diaryprog_aws_serverless') }}">Web Push Notification dengan AWS Serverless (S3, API Gateway, Lambda dan DynamoDB) </a></h5>
+                            </div>
+                        </div>
+                    </div>
+
         		</div>
         	</div>
 
