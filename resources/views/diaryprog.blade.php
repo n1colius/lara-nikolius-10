@@ -39,6 +39,28 @@
                     </div>
 
         		</div>
+
+                <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-3">
+
+                    <div class="col">
+                        <div class="card" style="border:none;">
+                            <img src="{{url('/')}}/assets/img/phpsess.jpg" class="card-img-top" style="width:150px;height: 125px;">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="{{ route('diaryprog_php_sess_dynamodb') }}">PHP Session with AWS DynamoDB</a></h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card" style="border:none;">
+                            <img src="{{url('/')}}/assets/img/auth0cognito.jpg" class="card-img-top" style="width:150px;height: 125px;">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="{{ route('diaryprog_auth0_cognito') }}">Auth0 dan AWS Cognito</a></h5>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
         	</div>
 
         </div>
