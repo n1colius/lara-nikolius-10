@@ -44,6 +44,9 @@ Route::get('/diaryprog_data_vis', [App\Http\Controllers\DiaryProgDataVis::class,
 Route::get('/diaryprog_aws_serverless', [App\Http\Controllers\DiaryProgAwsServerless::class, 'index'])->name('diaryprog_aws_serverless');
 Route::get('/diaryprog_php_sess_dynamodb', [App\Http\Controllers\DiaryProgPhpSessDynamodb::class, 'index'])->name('diaryprog_php_sess_dynamodb');
 Route::get('/diaryprog_auth0_cognito', [App\Http\Controllers\DiaryProgAuth0Cognito::class, 'index'])->name('diaryprog_auth0_cognito');
+Route::get('/diaryprog_git_workflow', [App\Http\Controllers\DiaryProgGitWorkflow::class, 'index'])->name('diaryprog_git_workflow');
+Route::get('/diaryprog_git_command', [App\Http\Controllers\DiaryProgGitCommand::class, 'index'])->name('diaryprog_git_command');
+Route::get('/diaryprog_php_bref', [App\Http\Controllers\DiaryProgPhpBref::class, 'index'])->name('diaryprog_php_bref');
 
 
 Route::get('/cv', [App\Http\Controllers\CvController::class, 'index'])->name('cv');
