@@ -17,4 +17,18 @@ class JualanController extends Controller
 		return view('jual');
 	}
 
+	public function detail(Request $request) {
+    	$link_product = $request->route('link_product');
+
+    	switch ($link_product) {
+    		case 'jolly':
+    			$view_render = 'product/jolly';
+    		break;
+    		default:
+    		break;
+    	}
+
+    	return view($view_render);
+    }
+
 }
