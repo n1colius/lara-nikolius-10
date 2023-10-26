@@ -52,8 +52,8 @@ Route::get('/diaryprog_php_bref', [App\Http\Controllers\DiaryProgPhpBref::class,
 Route::get('/cv', [App\Http\Controllers\CvController::class, 'index'])->name('cv');
 Route::get('/cv_eng', [App\Http\Controllers\CvController::class, 'cv_eng'])->name('cv_eng');
 
-Route::get('/jual', [App\Http\Controllers\JualanController::class, 'index'])->name('jual');
-Route::get('/jual/{link_product}', [App\Http\Controllers\JualanController::class, 'detail'])->name('product_detail');
+Route::get('/jualan', [App\Http\Controllers\JualanController::class, 'index'])->name('jualan');
+Route::get('/jualan/{link_product}', [App\Http\Controllers\JualanController::class, 'detail'])->name('jualan_detail');
 
 //============ Data Sekolah ============================= (Begin)
 Route::get('/data_sekolah', [App\Http\Controllers\DataSekolahController::class, 'index'])->name('data_sekolah');

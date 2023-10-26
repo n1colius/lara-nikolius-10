@@ -22,22 +22,19 @@
                                                 </div>
                                             </div>
                                             
-                                            <a href="{{ route("product_detail", ['link_product' => 'yohohow']) }}" title="View Detail">
-                                                <img class="img-fluid rounded thumbnail-image" src="{{url('/')}}/assets/shop/8JIWpnw.jpg"></img>
+                                            <a href="{{ route("jualan_detail", ['link_product' => 'jolly']) }}" title="View Detail">
+                                                <img class="img-fluid rounded thumbnail-image" src="{{url('/')}}/assets/shop/jolly-1.png"></img>
                                             </a>
                                         </div>
                                         <div class="product-detail-container p-2">
                                             <div class="d-flex justify-content-between align-items-center">
                                                 <h5 class="shop-item-title">
-                                                    <a href="{{ route("product_detail", ['link_product' => 'yohohow']) }}" title="View Detail">Judul Produk Yang Agak Panjang-panjang aja Lihat Gimana</a>
+                                                    <a href="{{ route("jualan_detail", ['link_product' => 'jolly']) }}" title="View Detail">Tissue Jolly 250 Sheets</a>
                                                 </h5>
                                             </div>
 
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                                tempor incididunt ut labore et dolore magna aliqua.</p>
-
                                             <div style="float:right">
-                                                <h6 class="shop-item-price">Rp 3.333.333</h6>
+                                                <h6 class="shop-item-price">Rp 8.000</h6>
                                             </div>
                                         </div>
                                     </div>
