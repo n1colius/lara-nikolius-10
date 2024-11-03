@@ -20,21 +20,15 @@ class SahamMainController extends Controller
     	$JumlahHari = (int) $request->input('JumlahHari');
     	$path = $request->FileJson->path();
     	$JsonData = json_decode(file_get_contents($path),true);
-
-    	$ArrayTanggal = array();
-    	$ArrPriceOpen = array();
-    	$ArrPriceClosed = array();
-    	$ArrPriceHigh = array();
-    	$ArrPriceLow = array();
-    	$ArrBidVolume = array();
-    	$ArrOfferVolume = array();
     	//dd($JsonData);
 
+    	//\DB::enableQueryLog(); // Enable query log
     	DB::beginTransaction();
 		try {
 			foreach($JsonData['replies'] as $x => $val) {
 				$varproc = explode("T",$val['Date']);
 				$Date = $varproc[0];
+
 				$PriceOpen = $val['Previous'];
 				$PriceClosed = $val['Close'];
 				$PriceHigh = $val['High'];
@@ -43,8 +37,21 @@ class SahamMainController extends Controller
 				$BidVolume = $val['BidVolume'];
 				$OfferVolume = $val['OfferVolume'];
 
+				$Change = $val['Change'];
+				$Volume = $val['Volume'];
+				$Value = $val['Value'];
+				$Frequency = $val['Frequency'];
+				$IndexIndividual = $val['IndexIndividual'];
+				$Offer = $val['Offer'];
+				$Bid = $val['Bid'];
+				$ForeignSell = $val['ForeignSell'];
+				$ForeignBuy = $val['ForeignBuy'];
+				$NonRegularVolume = $val['NonRegularVolume'];
+				$NonRegularValue = $val['NonRegularValue'];
+				$NonRegularFrequency = $val['NonRegularFrequency'];
+
 				//lakukan insert on duplicate key update disini
-				$sqlraw = "INSERT IGNORE INTO `saham_historical` (EmitCode,`Date`,PriceOpen,PriceClosed,PriceHigh,PriceLow,ListedShares,BidVolume,OfferVolume,DateGenerated) VALUES (?,?,?,?,?,?,?,?,?,NOW())";
+				$sqlraw = "INSERT IGNORE INTO `saham_historical` (EmitCode,`Date`,PriceOpen,PriceClosed,PriceHigh,PriceLow,ListedShares,BidVolume,OfferVolume,`Change`,Volume,`Value`,Frequency,IndexIndividual,Offer,Bid,ForeignSell,ForeignBuy,NonRegularVolume,NonRegularValue,NonRegularFrequency,DateGenerated) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,NOW())";
 				$query = DB::insert($sqlraw, [
 					$EmitmenCode,
 					$Date,
@@ -54,12 +61,26 @@ class SahamMainController extends Controller
 					$PriceLow,
 					$ListedShares,
 					$BidVolume,
-					$OfferVolume
+					$OfferVolume,
+					$Change,
+					$Volume,
+					$Value,
+					$Frequency,
+					$IndexIndividual,
+					$Offer,
+					$Bid,
+					$ForeignSell,
+					$ForeignBuy,
+					$NonRegularVolume,
+					$NonRegularValue,
+					$NonRegularFrequency
 				]);
+				//dd(\DB::getQueryLog());
 			}
 
 			DB::commit();
 		} catch (\Exception $e) {
+			dd($e);
 		    DB::rollback();
 		}
 
@@ -80,6 +101,14 @@ class SahamMainController extends Controller
 				LIMIT $JumlahHari ";
 		$DataSaham = DB::select($sql, [ $EmitmenCode ]);
 		//echo '<pre>'; print_r($DataSaham); exit;
+
+		$ArrayTanggal = array();
+		$ArrPriceOpen = array();
+		$ArrPriceClosed = array();
+		$ArrPriceHigh = array();
+		$ArrPriceLow = array();
+		$ArrBidVolume = array();
+		$ArrOfferVolume = array();
 
 		for ($i=count($DataSaham); $i > 0; $i--) {
 			$ArrayTanggal[] = $DataSaham[$i-1]->Tanggal;
