@@ -33,6 +33,8 @@ Route::get('/dota_winrate_chart', [App\Http\Controllers\DotaWinrateChartControll
 Route::get('/dota_winrate_chart_display', [App\Http\Controllers\DotaWinrateChartController::class, 'display'])->name('dota_winrate_chart_display');
 Route::get('/saham_main', [App\Http\Controllers\SahamMainController::class, 'index'])->name('saham_main');
 Route::post('/saham_main_form_proc', [App\Http\Controllers\SahamMainController::class, 'form_proc'])->name('saham_main_form_proc');
+Route::post('/saham_main_pilihan_form_proc', [App\Http\Controllers\SahamMainController::class, 'pilihan_form_proc'])->name('saham_main_pilihan_form_proc');
+
 Route::get('/ektp_extract', [App\Http\Controllers\EktpExtractController::class, 'index'])->name('ektp_extract');
 Route::post('/ektp_extract_form_proc', [App\Http\Controllers\EktpExtractController::class, 'form_proc'])->name('ektp_extract_form_proc');
 Route::get('/docker_web', [App\Http\Controllers\DockerWebController::class, 'index'])->name('docker_web');

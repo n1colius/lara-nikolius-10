@@ -11357,6 +11357,19 @@ a.btn-wa:active {
   box-shadow: none;
 }
 
+div.cont-kartu-simpel {
+  border:1px solid gray;
+  margin:10px;
+}
+
+label.cont-kartu-simpel-judul-satu {
+  font-weight:bold; font-size: 16px; color:blue;
+}
+
+label.cont-kartu-simpel-judul-dua {
+  font-weight:bold; font-size: 20px; color:green;
+}
+
 /*===================================================================================================================*/
 
 
