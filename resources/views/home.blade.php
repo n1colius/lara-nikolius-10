@@ -19,7 +19,7 @@
                     </div>
                     <div class="col">
                         <div class="social-icons">
-                            <a class="social-icon" href="https://www.linkedin.com/in/nikolius-lau-3138475b" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="social-icon" href="https://www.linkedin.com/in/nikolius-lau/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                             <a class="social-icon" href="https://github.com/n1colius" target="_blank"><i class="fab fa-github"></i></a>
                             <a class="social-icon" href="https://twitter.com/n1colius" target="_blank"><i class="fab fa-twitter"></i></a>
                             <a class="social-icon" href="https://www.facebook.com/nikolius" target="_blank"><i class="fab fa-facebook-f"></i></a>
