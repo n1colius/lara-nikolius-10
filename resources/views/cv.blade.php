@@ -1,27 +1,27 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 <head>
     <title>Nikolius - CV</title>
-    
+
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="{{url('/')}}/assets-cv/favico.png"> 
-    
+    <link rel="shortcut icon" href="{{url('/')}}/assets-cv/favico.png">
+
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
-    
+
     <!-- FontAwesome JS-->
 	<script defer src="{{url('/')}}/assets-cv/fontawesome/js/all.min.js"></script>
-       
-    <!-- Theme CSS -->  
+
+    <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="{{url('/')}}/assets-cv/css/pillar-1.css">
 
 
-</head> 
+</head>
 
-<body>	
+<body>
 
     <article class="resume-wrapper text-center position-relative">
 	    <div class="resume-wrapper-inner mx-auto text-start bg-white shadow-lg">
@@ -48,7 +48,7 @@
 							    </ul>
 						    </div><!--//secondary-info-->
 					    </div><!--//row-->
-					    
+
 				    </div><!--//col-->
 			    </div><!--//row-->
 		    </header>
@@ -101,7 +101,6 @@
 					    	    		    	<li>Successfully implement Customer Identity And Access Management with AWS Cognito</li>
 					    	    		    	<li>Successfully implementing assets with content delivery network using AWS S3 with CloudFront</li>
 					    	    		    	<li>Successfully migrating from traditionally hosted MySQL Server to AWS RDS Aurora with multi region setup</li>
-					    	    		    	<li>Successfully migrating from traditionally hosted MySQL Server to AWS RDS Aurora with multi region setup</li>
 					    	    		    	<li>Successfully converting Kafka Pub/Sub to Laravel Jobs using AWS SQS and SQS Lambda</li>
 					    	    		    	<li>Successfully migrating from traditional DB to Redis for the application reference data for quicker loading time</li>
 					    	    		    </ul>
@@ -119,7 +118,7 @@
 						    				    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">JIRA</span></li>
 						    				    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Microsoft Office 365</span></li>
 						    			    </ul>
-						    			    
+
 					    	    	    </div>
 					    	        </article>
 
@@ -157,7 +156,7 @@
 						    				    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Trello</span></li>
 						    				    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Slack</span></li>
 						    			    </ul>
-						    			    
+
 					    	    	    </div>
 					    	        </article>
 
@@ -195,7 +194,7 @@
 						    				    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Trello</span></li>
 						    				    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Slack</span></li>
 						    			    </ul>
-						    			    
+
 					    	    	    </div>
 					    	        </article>
 
@@ -233,7 +232,7 @@
 						    				    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Python</span></li>
 						    				    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">NodeJS</span></li>
 						    			    </ul>
-						    			    
+
 					    	    	    </div>
 					    	        </article>
 
@@ -274,7 +273,7 @@
 						    				    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Object-Oriented Programming (OOP)</span></li>
 						    				    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Linux Web Server and Database Hosting</span></li>
 						    			    </ul>
-						    			    
+
 					    	    	    </div>
 					    	        </article>
 
@@ -316,26 +315,26 @@
 						    				    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Linux VPS Hosting for the online store</span></li>
 						    				    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Self made POS system</span></li>
 						    			    </ul>
-						    			    
+
 					    	    	    </div>
 					    	        </article>
-								    
+
 							    </div><!--//resume-timeline-->
-							    
-							    
-							    
-							    
-							    
-							    
+
+
+
+
+
+
 						    </div>
 					    </section><!--//experience-section-->
 				    </div>
 			    </div><!--//row-->
 		    </div><!--//resume-body-->
-		    
-		    
+
+
 	    </div>
-    </article> 
+    </article>
 
     <footer class="footer text-center pt-2 pb-5">
 	    <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
@@ -363,7 +362,7 @@
 	})
 }, 1000);*/
 </script>
-    
+
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
-</html> 
+</html>
