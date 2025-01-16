@@ -101,7 +101,7 @@
 					    	    		    	<li>Successfully implement Customer Identity And Access Management with AWS Cognito</li>
 					    	    		    	<li>Successfully implementing assets with content delivery network using AWS S3 with CloudFront</li>
 					    	    		    	<li>Successfully migrating from traditionally hosted MySQL Server to AWS RDS Aurora with multi region setup</li>
-					    	    		    	<li>Successfully converting Kafka Pub/Sub to Laravel Jobs using AWS SQS and SQS Lambda</li>
+					    	    		    	<li>Successfully converting Kafka Pub/Sub to Laravel Jobs using AWS SQS and Lambda</li>
 					    	    		    	<li>Successfully migrating from traditional DB to Redis for the application reference data for quicker loading time</li>
 					    	    		    </ul>
 
