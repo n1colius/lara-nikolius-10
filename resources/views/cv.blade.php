@@ -342,7 +342,7 @@
     </footer>
 
 <script type="text/javascript">
-/*setTimeout(() => {
+setTimeout(() => {
 	const Toast = Swal.mixin({
 	  toast: true,
 	  position: 'top-end',
@@ -353,14 +353,14 @@
 	})
 
 	Toast.fire({
-		iconHtml: '<img src="{{url('/')}}/assets/img/us.jpg">',
+		iconHtml: '<img src="{{url('/')}}/assets/pdf.png">',
 		customClass: {
-			icon: 'no-border'
+			icon: 'no-icon-border'
 		},
 	  	html:
-	      'Switch to english CV <a href="{{ route('cv_eng') }}">here</a>'
+	      'Download CV <a target="_blank" href="{{url('/')}}/assets/Nikolius-CV-Text.pdf">here</a>'
 	})
-}, 1000);*/
+}, 1000);
 </script>
 
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
