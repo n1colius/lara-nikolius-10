@@ -6,6 +6,9 @@ Dibangun dengan Laravel 10 Framework, tempat saya pribadi untuk belajar dan menc
 Feel free untuk dipakai sebagai acuan or dijadikan sekedar referensi.
 
 
+# Jalankan webserver local
+php artisan serve --port=1984
+
 
 
 ## Authors
